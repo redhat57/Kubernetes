@@ -17,9 +17,9 @@ After a few minutes, verify that the Ingress resource was created with the follo
 **kubectl get ingress/ingress-2048 -n game-2048
 Output:**
 
-**NAME           CLASS    HOSTS   ADDRESS                                                                   PORTS   AGE
-ingress-2048   <none>   *       k8s-game2048-ingress2-xxxxxxxxxx-yyyyyyyyyy.us-west-2.elb.amazonaws.com   80      2m32s
-Note**
+**NAME           CLASS    HOSTS   ADDRESS                                                                   PORTS   AGE**
+ingress-2048   <none>   *       k8s-game2048-ingress2-xxxxxxxxxx-yyyyyyyyyy.us-west-2.elb.amazonaws.com     80      2m32s
+**Note**
 If your Ingress has not been created after several minutes, run the following command to view the Load Balancer Controller logs. These logs may contain error messages that can help you diagnose any issues with your deployment.
 
 **kubectl logs -n kube-system   deployment.apps/aws-load-balancer-controller**
